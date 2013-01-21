@@ -1,12 +1,19 @@
-a = 20
-b =100
+import random
+
+#Randint(a,b) crea un valor entre a y b aleatorio
+a = random.randint(1,500)
+b = random.randint(1,1000)
 resultado = b - a
-print 'Resultado %d' % resultado
+
 
 if resultado > 0:
-	print 'El resultado es mayor a 0'
+	resultado_cadena= 'El resultado es mayor a 0 %d'
 	if resultado > 100:
-		print "Mayor a 100"
+		resultado_cadena= "Mayor a 100 %d"
 	else:
-		print "Naaa es menor que 100"
+		resultado_cadena= "Naaa es menor que 100 %d"
+else:
+	resultado_cadena= 'Ya ahora el resultado es menor que 0 %d'
+
+print resultado_cadena % resultado
 
