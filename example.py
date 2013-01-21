@@ -1,8 +1,8 @@
-import random
+from random import randint
 
 #Randint(a,b) crea un valor entre a y b aleatorio
-a = random.randint(1,500)
-b = random.randint(1,1000)
+a = randint(1,500)
+b = randint(1,1000)
 resultado = b - a
 
 
